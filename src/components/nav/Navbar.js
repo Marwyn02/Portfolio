@@ -1,6 +1,6 @@
 import './navbar.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div className="navbar-bg pb-8 md:pb-10">
             <button 
@@ -12,7 +12,7 @@ const Navbar = () => {
                 aria-controls="staticBackdrop"
             >
                 <img
-                    src="../utils/Burger-icon.png" 
+                    src={ props.burger } 
                     alt="" 
                 />
             </button>
@@ -31,7 +31,7 @@ const Navbar = () => {
                         type="button b"  
                         data-bs-dismiss="offcanvas" 
                         aria-label="Close">
-                            <img src="../utils/Cancel-button.png" alt="" />
+                            <img src={ props.close } alt="" />
                     </button>
                 </div>
                 <div class="offcanvas-body">

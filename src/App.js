@@ -46,16 +46,24 @@ const data = [
     img: "./images/TuristaThumb.png",
     link: "https://pure-waters-00186.herokuapp.com/"
   },
-  
 ]
 
+const utils = [
+  {
+    burger: "./utils/Burger-icon.png",
+    close: "./utils/Close-button.png"
+  }
+]
 
 const App = () => {
-  const [Website, setWebsite] = useState(data)
+  const [Website, setWebsite] = useState(data);
+  const [Icon, setIcons] = useState(utils);
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar 
+        icons={ Icon }
+      />
       <SiteLayout
         items={ Website }
       />
