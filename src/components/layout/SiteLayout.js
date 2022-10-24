@@ -8,7 +8,7 @@ const SiteLayout = (props) => {
         <div>
             <div className="text-center mb-3 mt-10">
                 <h1 
-                    className="font-bold text-slate-800 tracking-wide"
+                    className="font-semibold text-slate-800 tracking-wide"
                 >
                     welcome to my collections
                 </h1>

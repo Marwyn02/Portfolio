@@ -4,6 +4,9 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas'; 
 import Image from 'react-bootstrap/Image';
 
+import Menu from './nav-utils/burger.png';
+import Cancel from './nav-utils/cancel.png'
+
 const Navbar = (props) => {
     const [Show, setShow] = useState(false);
 
@@ -14,16 +17,12 @@ const Navbar = (props) => {
         <div className="navbar-bg pb-8 md:pb-10">
             <Button 
                 variant='none'
-                className="mt-10 ml-12 md:mt-14 md:ml-28 
-                w-8 md:w-10 duration-300 border-none bg-none
+                className="mt-10 ml-10 md:mt-14 md:ml-28 
+                w-12 md:w-12 duration-300 border-none bg-none
                 hover:bg-none"
                 onClick={ handleShow }
             >
-                {
-                    props.icon.map((item) => (
-                        <Image src={ item.burger } alt="..." />
-                    ))
-                }
+                <Image src={ Menu } alt="..." />
             </Button>
 
             <Offcanvas show={ Show } onHide={ handleClose }>
@@ -36,14 +35,11 @@ const Navbar = (props) => {
                     <Button
                         variant='none'
                         className="border-none bg-none
+                        w-10 md:w-10 duration-300
                         hover:bg-none"
                         onClick={ handleClose }
                     >
-                        {
-                            props.icon.map((item) => (
-                                <Image src={ item.close } alt="..." />
-                            ))
-                        }
+                        <Image src={ Cancel } alt="..." />
                     </Button>
                 </Offcanvas.Header>
                 <Offcanvas.Body>

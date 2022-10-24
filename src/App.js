@@ -48,12 +48,10 @@ const data = [
   },
 ]
 
-const logos = [
-  {
-      burger: "../utils/burger.png",
-      close: "../utils/close.png"
-  }
-]
+const logos =  {
+    burger: "./utils/burger.png",
+    close: "./utils/close.png"
+}
 
 const App = () => {
   const [Website, setWebsite] = useState(data);
