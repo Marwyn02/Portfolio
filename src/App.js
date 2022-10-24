@@ -1,23 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Navbar from './components/nav/Navbar';
+import SiteLayout from './components/layout/SiteLayout';
 
-function App() {
+const data = [
+  {
+    id: 1,
+    title: "UFOTO | Self-Portait Studio",
+    date: "September 30 2022",
+    img: "./images/UFOTOThumb.png",
+    link: "https://marwyn02.github.io/UFOTO"
+    // tools: [
+    //   {
+    //     programming: {
+    //       name: "Html"
+    //     }
+    //   },
+    //   {
+    //     programming: {
+    //       name: "Css"
+    //     }
+    //   },
+    //   {
+    //     programming: {
+    //       name: "Javascript"
+    //     }
+    //   },
+    //   {
+    //     programming: {
+    //       name: "Jquery"
+    //     }
+    //   }
+    // ]
+  },
+  {
+    id: 2,
+    title: "Pokedex",
+    date: "October 18 2022",
+    img: "./images/PokedexThumb.png",
+    link: "https://marwyn02.github.io/PokeDex-React-App"
+  },
+  {
+    id: 3,
+    title: "Turista",
+    date: "July 10 2022",
+    img: "./images/TuristaThumb.png",
+    link: "https://pure-waters-00186.herokuapp.com/"
+  },
+  
+]
+
+
+const App = () => {
+  const [Website, setWebsite] = useState(data)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <SiteLayout
+        items={ Website }
+      />
     </div>
   );
 }
