@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas'; 
 import Image from 'react-bootstrap/Image';
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [Show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -19,7 +19,11 @@ const Navbar = () => {
                 hover:bg-none"
                 onClick={ handleShow }
             >
-                <Image src="../utils/burger.png" alt="..." />
+                {
+                    props.icon.map((item) => (
+                        <Image src={ item.burger } alt="..." />
+                    ))
+                }
             </Button>
 
             <Offcanvas show={ Show } onHide={ handleClose }>
@@ -35,7 +39,11 @@ const Navbar = () => {
                         hover:bg-none"
                         onClick={ handleClose }
                     >
-                        <Image src='../utils/close.png' />
+                        {
+                            props.icon.map((item) => (
+                                <Image src={ item.close } alt="..." />
+                            ))
+                        }
                     </Button>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
