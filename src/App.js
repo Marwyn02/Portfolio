@@ -48,21 +48,12 @@ const data = [
   },
 ]
 
-const logos =  {
-    burger: "./utils/burger.png",
-    close: "./utils/close.png"
-}
-
 const App = () => {
-  const [Website, setWebsite] = useState(data);
-
-  const [Logo, setLogo] = useState(logos);
+  const [Website] = useState(data);
 
   return (
     <div className="App">
-      <Navbar 
-        icon={ Logo }
-      />
+      <Navbar />
       <SiteLayout
         items={ Website }
       />

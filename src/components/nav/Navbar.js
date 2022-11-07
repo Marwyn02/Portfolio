@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 import Menu from './nav-utils/burger.png';
 import Cancel from './nav-utils/cancel.png'
 
-const Navbar = (props) => {
+const Navbar = () => {
     const [Show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);

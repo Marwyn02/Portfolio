@@ -8,7 +8,7 @@ const Card = (props) => {
 
                 <div className="grid grid-cols-1 gap-y-14 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                 {props.data.map((item) => (
-                    <a key={item.id} href={ item.link } className="group">
+                    <a key={item.id} href={ item.link } title={ item.title } className="group">
                         <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
                             <img
                             src={item.img}
