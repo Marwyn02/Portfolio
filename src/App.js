@@ -8,43 +8,40 @@ const data = [
     title: "UFOTO | Self-Portait Studio",
     date: "September 30 2022",
     img: "./images/UFOTOThumb.png",
-    link: "https://marwyn02.github.io/UFOTO"
-    // tools: [
-    //   {
-    //     programming: {
-    //       name: "Html"
-    //     }
-    //   },
-    //   {
-    //     programming: {
-    //       name: "Css"
-    //     }
-    //   },
-    //   {
-    //     programming: {
-    //       name: "Javascript"
-    //     }
-    //   },
-    //   {
-    //     programming: {
-    //       name: "Jquery"
-    //     }
-    //   }
-    // ]
+    link: "https://marwyn02.github.io/UFOTO",
+    tools: [
+      { programming: { name: "HTML" } },
+      { programming: { name: "CSS" } },
+      { programming: { name: "JQuery" } },
+      { programming: { name: "Javascript" } },
+    ]
   },
   {
     id: 2,
     title: "Pokedex",
     date: "October 18 2022",
     img: "./images/PokedexThumb.png",
-    link: "https://marwyn02.github.io/PokeDex-React-App"
+    link: "https://marwyn02.github.io/PokeDex-React-App",
+    tools: [
+      { programming: { name: "ReactJS" } },
+      { programming: { name: "API" } },
+      { programming: { name: "Tailwind" } },
+      { programming: { name: "GSAP" } },
+    ]
   },
   {
     id: 3,
     title: "Turista",
     date: "July 10 2022",
     img: "./images/TuristaThumb.png",
-    link: "https://pure-waters-00186.herokuapp.com/"
+    link: "https://pure-waters-00186.herokuapp.com/",
+    tools: [
+      { programming: { name: "Javascript" } },
+      { programming: { name: "NodeJS" } },
+      { programming: { name: "MongoDB" } },
+      { programming: { name: "Tailwind" } },
+      { programming: { name: "Bootstrap" } }
+    ]
   },
 ]
 
