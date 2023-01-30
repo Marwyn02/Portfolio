@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import Navbar from './components/nav/Navbar';
-import SiteLayout from './components/layout/SiteLayout';
+import { useState } from "react";
+import Navbar from "./components/nav/Navbar";
+import SiteLayout from "./components/layout/SiteLayout";
 
 const data = [
   {
@@ -14,7 +14,8 @@ const data = [
       { programming: { name: "CSS" } },
       { programming: { name: "JQuery" } },
       { programming: { name: "Javascript" } },
-    ]
+      { programming: { name: "Tailwind" } },
+    ],
   },
   {
     id: 2,
@@ -27,7 +28,7 @@ const data = [
       { programming: { name: "API" } },
       { programming: { name: "Tailwind" } },
       { programming: { name: "GSAP" } },
-    ]
+    ],
   },
   {
     id: 3,
@@ -40,10 +41,21 @@ const data = [
       { programming: { name: "NodeJS" } },
       { programming: { name: "MongoDB" } },
       { programming: { name: "Tailwind" } },
-      { programming: { name: "Bootstrap" } }
-    ]
+      { programming: { name: "Bootstrap" } },
+    ],
   },
-]
+  {
+    id: 4,
+    title: "Online Palengke",
+    date: "January 30 2023",
+    img: "./images/OnlinePalengkeThumb.png",
+    link: "https://marwyn02.github.io/E-Market/",
+    tools: [
+      { programming: { name: "ReactJS" } },
+      { programming: { name: "Tailwind" } },
+    ],
+  },
+];
 
 const App = () => {
   const [Website] = useState(data);
@@ -51,11 +63,9 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <SiteLayout
-        items={ Website }
-      />
+      <SiteLayout items={Website} />
     </div>
   );
-}
+};
 
 export default App;
