@@ -49,7 +49,7 @@ const data = [
     title: "Online Palengke",
     date: "January 30 2023",
     img: "./images/OnlinePalengkeThumb.png",
-    link: "https://marwyn02.github.io/E-Market/",
+    link: "",
     tools: [
       { programming: { name: "ReactJS" } },
       { programming: { name: "Tailwind" } },
