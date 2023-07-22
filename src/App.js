@@ -8,7 +8,7 @@ const data = [
     title: "UFOTO | Self-Portait Studio",
     date: "September 30 2022",
     img: "./images/UFOTOThumb.png",
-    link: "https://marwyn02.github.io/UFOTO",
+    link: "https://marwyn02.github.io/Ufoto",
     tools: [
       { programming: { name: "HTML" } },
       { programming: { name: "CSS" } },
