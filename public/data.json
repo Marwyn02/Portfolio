@@ -19,7 +19,7 @@
       "title": "Pokedex",
       "date": "October 18 2022",
       "img": "./images/PokedexThumb.png",
-      "link": "https://marwyn02.github.io/PokeDex-React-App",
+      "link": "https://marwyn02.github.io/PokeDex-React-App/",
       "tools": [
         { "programming": { "name": "ReactJS" } },
         { "programming": { "name": "API" } },
