@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../nav/Navbar";
 import Footer from "../nav/Footer";
 import "./ProjectItem.css";
-import { Link } from "react-router-dom";
 import BackButton from "../ui/BackButton";
 
 const ProjectItem = ({ data }) => {
@@ -47,9 +46,9 @@ const ProjectItem = ({ data }) => {
             </div>
             <div className="my-5">
               <button className="bg-white/60 text-gray-800/90 py-2 w-full text-xs font-extrabold italic group hover:bg-white/90 hover:text-black duration-300">
-                <Link to={data.link} className="group-hover:text-black">
+                <a href={data.link} className="group-hover:text-red-900">
                   Live Demo
-                </Link>
+                </a>
               </button>
             </div>
           </div>

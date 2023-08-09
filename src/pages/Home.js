@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Card from "../components/ui/Card";
 import Navbar from "../components/nav/Navbar";
 import Footer from "../components/nav/Footer";
-import { useLoaderData } from "react-router-dom";
+import { defer, useLoaderData, Await } from "react-router-dom";
 
 const Home = () => {
-  const Data = useLoaderData();
-  const WebData = Data.websites;
+  const { projects } = useLoaderData();
+
   return (
     <div className="bg-main">
       <Navbar />
@@ -15,9 +15,19 @@ const Home = () => {
           welcome to my collections
         </h1>
       </div>
-      <div>
-        <Card data={WebData} />
-      </div>
+      <Suspense
+        fallback={
+          <p className="text-center text-white text-xl mt-10 font-extrabold">
+            Loading Projects...
+          </p>
+        }
+      >
+        <Await resolve={projects}>
+          {(loadedProjects) => {
+            return <Card data={loadedProjects} />;
+          }}
+        </Await>
+      </Suspense>
       <Footer />
     </div>
   );
@@ -25,7 +35,7 @@ const Home = () => {
 
 export default Home;
 
-export async function loader() {
+async function loadProjects() {
   const response = await fetch(`${process.env.PUBLIC_URL}/data.json`, {
     headers: {
       "Content-Type": "application/json",
@@ -33,5 +43,11 @@ export async function loader() {
     },
   });
   const data = await response.json();
-  return data;
+  return data.websites;
+}
+
+export function loader() {
+  return defer({
+    projects: loadProjects(),
+  });
 }
