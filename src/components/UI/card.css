@@ -1,43 +1,67 @@
 .HTML {
-    color: #D84A24;
+  background-color: #d84a24;
 }
 
 .CSS {
-    color: #0365B7;
+  background-color: #0365b7;
 }
 
 .Javascript {
-    color: #EBD41B;
+  background-color: #ebd41b;
+  color: black;
 }
 
 .ReactJS {
-    color: #5ACBEC;
+  background-color: #5acbec;
+  color: black;
 }
 
 .Tailwind {
-    color: #34B3EC;
+  background-color: #34b3ec;
 }
 
 .Bootstrap {
-    color: #7A10ED;
+  background-color: #7a10ed;
 }
 
 .GSAP {
-    color: #81C405;
+  background-color: #81c405;
 }
 
 .JQuery {
-    color: #0962A3;
+  background-color: #0962a3;
 }
 
 .NodeJS {
-    color: #679F63;
+  background-color: #679f63;
 }
 
 .MongoDB {
-    color: #00ED64;
+  background-color: #00ed64;
+  color: black;
 }
 
 .API {
-    color: #B44E07;
+  background-color: #b44e07;
+}
+
+.NextJS {
+  background-color: #000000;
+}
+
+.Typescript {
+  background-color: #007acc;
+}
+
+.PostgreSQL {
+  background-color: #336791;
+}
+
+.Expo {
+  background-color: #000020;
+}
+
+.Paymongo {
+  background-color: #4dff59;
+  color: black;
 }

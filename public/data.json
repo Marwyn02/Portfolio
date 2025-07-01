@@ -6,6 +6,8 @@
       "date": "September 30 2022",
       "img": "./images/UFOTOThumb.png",
       "link": "https://marwyn-ufoto.onrender.com/",
+      "code": "https://github.com/Marwyn02/Ufoto",
+      "description": "A sleek and modern landing page designed for a photobooth rental business. This website showcases all available services, pricing, and testimonials in a visually appealing way. With a clean UI, smooth animations, and responsive design, potential clients can easily explore the offerings and book a session. The site also integrates a contact form and social media links to enhance customer engagement.",
       "tools": [
         { "programming": { "name": "HTML" } },
         { "programming": { "name": "CSS" } },
@@ -20,6 +22,8 @@
       "date": "October 18 2022",
       "img": "./images/PokedexThumb.png",
       "link": "https://marwyn02.github.io/PokeDex-React-App/",
+      "code": "https://github.com/Marwyn02/PokeDex-React-App/tree/master",
+      "description": "A Pokédex application that allows users to search and explore detailed information about various Pokémon. The app fetches data from an external Pokémon API to display each Pokémon’s type, abilities, stats, and evolution chain. With a responsive layout and intuitive UI, users can quickly filter and browse their favorite Pokémon effortlessly.",
       "tools": [
         { "programming": { "name": "ReactJS" } },
         { "programming": { "name": "API" } },
@@ -33,23 +37,54 @@
       "date": "July 10 2022",
       "img": "./images/TuristaThumb.png",
       "link": "https://pure-waters-00186.herokuapp.com/",
+      "code": "https://github.com/Marwyn02/Turista",
+      "description": "Turista is a social travel website where users can post their adventures, travel photos, and experiences. Designed for wanderlust enthusiasts, this platform allows travelers to document their trips, share stories, and discover new destinations through user-generated content. With an interactive map view, categorized travel blogs, and a comment section, Turista fosters a vibrant travel community.",
       "tools": [
-        { "programming": { "name": "Javascript" } },
-        { "programming": { "name": "NodeJS" } },
+        { "programming": { "name": "NextJS" } },
+        { "programming": { "name": "Typescript" } },
         { "programming": { "name": "MongoDB" } },
-        { "programming": { "name": "Tailwind" } },
-        { "programming": { "name": "Bootstrap" } }
+        { "programming": { "name": "Tailwind" } }
       ]
     },
     {
       "id": "4",
-      "title": "Online Palengke",
-      "date": "January 30 2023",
-      "img": "./images/OnlinePalengkeThumb.png",
-      "link": "",
+      "title": "Schedule Planner App",
+      "date": "March 16 2024",
+      "img": "./images/CartSchedulePlannerThumb.png",
+      "link": "https://cart-schedule-planner.vercel.app/",
+      "code": "https://github.com/Marwyn02/CartSchedulePlanner",
+      "description": "Schedule Planner is a scheduling app built with Next.js, TypeScript, Tailwind CSS, and PostgreSQL. It helps users efficiently plan, organize, and manage schedules with an intuitive and responsive UI.",
       "tools": [
-        { "programming": { "name": "ReactJS" } },
-        { "programming": { "name": "Tailwind" } }
+        { "programming": { "name": "NextJS" } },
+        { "programming": { "name": "Typescript" } },
+        { "programming": { "name": "Tailwind" } },
+        { "programming": { "name": "PostgreSQL" } }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Code Crusaders",
+      "date": "March 16 2024",
+      "img": "./images/CodeCrusadersThumb.png",
+      "link": "",
+      "code": "https://github.com/Marwyn02/Mobap_Project",
+      "description": "Code Crusaders is a web developer quiz game app built with Expo. It challenges players with interactive coding and web development questions, helping them test and expand their knowledge in HTML, CSS, JavaScript, React, and more. With a sleek UI and engaging gameplay, it’s the perfect app for both beginners and experienced developers to learn, compete, and level up their coding skills.",
+      "tools": [{ "programming": { "name": "Expo" } }]
+    },
+    {
+      "id": "6",
+      "title": "Crisanto Transient House - Staycation Booking Website",
+      "date": "January 30 2025",
+      "img": "./images/CrisantoThumb.png",
+      "link": "",
+      "code": "https://github.com/Marwyn02/FinalsCapstoneProject",
+      "description": "Crisanto Transient House is a staycation booking website designed to provide a seamless and user-friendly experience for booking transient accommodations. The platform allows users to browse available rooms, make reservations, and complete payments online. It is built with modern web technologies to ensure efficiency, security, and scalability.",
+      "tools": [
+        { "programming": { "name": "NextJS" } },
+        { "programming": { "name": "Typescript" } },
+        { "programming": { "name": "Tailwind" } },
+        { "programming": { "name": "PostgreSQL" } },
+        { "programming": { "name": "Paymongo" } }
       ]
     }
   ]

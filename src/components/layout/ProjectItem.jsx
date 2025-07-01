@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../nav/Navbar";
-import Footer from "../nav/Footer";
+import Navbar from "../nav/Navbar.jsx";
+import Footer from "../nav/Footer.jsx";
 import "./ProjectItem.css";
-import BackButton from "../ui/BackButton";
+import BackButton from "../UI/BackButton.jsx";
 
 const ProjectItem = ({ data }) => {
   return (
