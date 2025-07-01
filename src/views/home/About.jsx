@@ -1,5 +1,3 @@
-import React from "react";
-
 // Third Party Libraries
 import { Code, Cpu, Globe } from "lucide-react";
 
