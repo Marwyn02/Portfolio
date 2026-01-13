@@ -86,6 +86,20 @@
         { "programming": { "name": "PostgreSQL" } },
         { "programming": { "name": "Paymongo" } }
       ]
+    },
+    {
+      "id": "7",
+      "title": "MaksDHedgehog - Landing Page",
+      "date": "December 2025",
+      "img": "./images/maksdhedgehog.png",
+      "link": "https://maksdhedgehog.netlify.app/",
+      "code": "",
+      "description": "MaksDhedgehog Printing is a modern business website designed to showcase professional printing services with a clean, user-friendly layout. The site highlights the brand’s services, sample works, and contact details, making it easy for customers to understand offerings and request inquiries. Its design focuses on clarity, visual appeal, and accessibility, providing a straightforward online presence for a local printing business.",
+      "tools": [
+        { "programming": { "name": "ViteJS" } },
+        { "programming": { "name": "Typescript" } },
+        { "programming": { "name": "Tailwind" } }
+      ]
     }
   ]
 }

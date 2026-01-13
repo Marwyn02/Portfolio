@@ -26,7 +26,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="lg:pt-20">
+    <section id="projects" className="pt-20 lg:pt-20">
       <div className="flex items-center justify-center">
         <span className="w-auto text-xs font-semibold bg-gray-300 rounded-full px-2.5 py-0.5">
           Projects

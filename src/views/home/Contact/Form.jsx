@@ -61,7 +61,7 @@ const Form = () => {
   };
 
   return (
-    <div className="rounded-xl p-6 md:p-8 border border-gray-300 shadow-sm backdrop-blur-sm">
+    <div className="opacity-20 rounded-xl p-6 md:p-8 border border-gray-300 shadow-sm backdrop-blur-sm">
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div className="space-y-2">
           <label htmlFor="name" className="text-sm font-medium text-white">
@@ -73,6 +73,7 @@ const Form = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Your name"
+            disabled
             className="w-full rounded-md border border-gray-300 border-input bg-background px-3 py-2 text-sm text-gray-300 placeholder:text-gray-400 ring-offset-background transition-all focus:outline-none focus:ring-2 focus:ring-ring"
           />
           {errors.name && <p className="text-red-500 text-xs">{errors.name}</p>}
@@ -88,6 +89,7 @@ const Form = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Your email"
+            disabled
             className="w-full rounded-md border border-gray-300 border-input bg-background px-3 py-2 text-sm text-gray-300 placeholder:text-gray-400 ring-offset-background transition-all focus:outline-none focus:ring-2 focus:ring-ring"
           />
           {errors.email && (
@@ -105,6 +107,7 @@ const Form = () => {
             onChange={handleChange}
             placeholder="Your message"
             rows={5}
+            disabled
             className="w-full rounded-md border border-gray-300 border-input bg-background px-3 py-2 text-sm text-gray-300 placeholder:text-gray-400 ring-offset-background transition-all focus:outline-none focus:ring-2 focus:ring-ring"
           />
           {errors.message && (
@@ -115,6 +118,7 @@ const Form = () => {
         <button
           type="submit"
           className="w-full bg-white inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/20 hover:bg-white/90"
+          disabled
         >
           Send message
         </button>

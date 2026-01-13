@@ -6,11 +6,11 @@ const Hero = () => {
     <div className="min-h-screen flex flex-col justify-center items-center space-y-10 lg:pt-24">
       <div className="flex items-center justify-center pb-8 md:pt-5">
         <span className="w-auto text-xs font-semibold bg-gray-300 rounded-full px-2.5 py-0.5">
-          Full-Stack Developer
+          Full-Stack Developer & Graphic Designer
         </span>
       </div>
 
-      <h1 className="text-4xl lg:text-7xl text-white font-semibold text-center lg:leading-20">
+      <h1 className="text-4xl lg:text-7xl text-white font-semibold text-center lg:leading-20 px-1">
         Creating elegant solutions for <br /> complex problems
       </h1>
 

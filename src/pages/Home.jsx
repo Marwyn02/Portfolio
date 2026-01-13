@@ -6,6 +6,7 @@ import Hero from "../views/home/Hero.jsx";
 import Projects from "../views/home/Projects.jsx";
 import About from "../views/home/About.jsx";
 import Contact from "../views/home/Contact/Contact.jsx";
+import Graphics from "../views/home/Graphics.jsx";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <Hero />
         <About />
         <Projects />
+        <Graphics />
         <Contact />
       </section>
       <Footer />
