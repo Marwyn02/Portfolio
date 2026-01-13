@@ -10,6 +10,11 @@ const graphics = [
     url: "./images/jewelry-enhancement.png",
   },
   {
+    id: 1,
+    title: "Product Image Editing",
+    url: "./images/shoe-enhancement.png",
+  },
+  {
     id: 2,
     title: "Email Header",
     url: "./images/header.jpg",
